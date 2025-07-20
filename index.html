@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Image Gallery</h1>
+    
+    <!-- Filter Buttons -->
+    <div class="filters">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="nature">Nature</button>
+      <button class="filter-btn" data-category="architecture">Architecture</button>
+      <button class="filter-btn" data-category="people">People</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="image" data-category="animals">
+  <img src="images/image1.jpg" alt="Animals">
+</div>
+<div class="image" data-category="buildings">
+  <img src="images/image2.jpg" alt="Buildings">
+</div>
+<div class="image" data-category="friends">
+  <img src="images/image3.jpg" alt="Friends">
+</div>
+      <!-- Add more images with categories -->
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-image" src="" alt="">
+    <div class="nav">
+      <span class="prev">&#10094;</span>
+      <span class="next">&#10095;</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
